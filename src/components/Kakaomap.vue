@@ -27,7 +27,7 @@ const loadKakaoMapScript = () => {
         }
 
         const script = document.createElement('script');
-        script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${import.meta.env.VITE_KAKAO_MAP_CLIENT_ID}&autoload=false&libraries=services`; // autoload=false는 직접 init 하겠다는 뜻
+        script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${import.meta.env.VITE_KAKAO_MAP_APP_KEY}&autoload=false&libraries=services`; // autoload=false는 직접 init 하겠다는 뜻
         script.onload = () => {
             window.kakao.maps.load(resolve); // SDK 내부 로딩이 완료되면 실행
         };
